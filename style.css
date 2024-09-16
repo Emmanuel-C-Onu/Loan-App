@@ -64,6 +64,10 @@ nav a {
   color: #719CC9;
   
 }
+.contactICON {
+  width: 30px;
+  height: 30px;
+}
 .login{
   display: flex;
   justify-content: space-between;
