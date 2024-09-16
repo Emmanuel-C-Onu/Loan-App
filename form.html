@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+    
+    <title>form</title>
+</head>
+<body>
+    <header style="position: relative !important; border-bottom: 1.5px solid blue;">
+        <div class="logo_img">
+            <a href="index.html">
+                <img src="Images/ecash.PNG" alt="logo">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#Home">Loans</a>
+            <a href="#Home">About</a>
+            <a href="#Home">Careers</a> 
+            <a href="#Home">Help</a>
+            <a href="#Home">FAQs</a>
+            
+        </nav>
+        <div class="contact">
+            <div>
+                <img src="images/contact.png" alt="" width="30" height="30">
+            </div>
+            <div>
+            <p>0902 952 0358</p>
+            <p>0703 846 0065</p>
+            </div>
+        </div>
+
+        <div class="login">
+            <a href="form.html">Apply Now</a>           
+        </div>
+
+    </header>
+    <!-- action="result.html"  -->
+   
+
+<section class="sectionContainer">
+    
+    <div class="container" id="container">
+        
+        <div id="result">
+            <h1>Loan Application Form</h1>
+            <form id="loanForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" required>
+                </div>
+    
+    
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+    
+                <!-- <div class="form-group">
+                    <label for="contact">Phone Number:</label>
+                    <input type="tel" id="contact" required>
+                </div> -->
+    
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="accountBalance">Account Balance (<del style="text-decoration-style: double;">N</del>):</label>
+                    <input type="number" id="accountBalance" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="loanAmount">Loan Amount (<del style="text-decoration-style: double;">N</del>):</label>
+                    <input type="number" id="loanAmount" required>
+                </div>
+    
+    
+    
+                <div class="form-group">
+                    <label for="creditHistory">Credit History:</label>
+                    <select id="creditHistory">
+                        <option value="0"></option>
+                        <option value="10">No Missed Payment</option>
+                        <option value="0">1-2 Missed Payment</option>
+                        <option value="0">1-3 Missed Payment</option>                    
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label for="LastDepositDate">Last Deposit Date:</label>
+                    <select id="LastDepositDate">
+                        <option value="0"></option>
+                        <option value="10">This Month</option>
+                        <option value="0">Last Month</option>
+                        <option value="0">Last 2 Month</option>
+                        <option value="0">Last 3 Month</option>
+                        <option value="0">Last 4 Month</option>
+                        <option value="0">Last 5 Month</option>
+                        <option value="0">Last 6 Month</option>
+                        <option value="0">Above 6 Month</option>
+                    </select>                
+                </div>
+    
+                <div class="form-group">
+                    <label for="LastLoanCollectionDate">Last Loan Collection Date:</label>
+                    <select id="LastLoanCollectionDate">
+                        <option value="0"></option>
+                        <option value="0">This Month</option>
+                        <option value="0">Last Month</option>
+                        <option value="0">Last 2 Month</option>
+                        <option value="0">Last 3 Month</option>
+                        <option value="0">Last 4 Month</option>
+                        <option value="0">Last 5 Month</option>
+                        <option value="10">Last 6 Month</option>
+                        <option value="10">Above 6 Month</option>
+                    </select>                
+                </div>
+    
+                <div class="form-group">
+                    <label for="LoanRepaymentPeriod">Loan Repayment Period:</label>
+                    <select id="LoanRepaymentPeriod">
+                        <option value="0"></option>
+                        <option value="10">Between Now and 6 Months</option>
+                        <option value="0">Between 6 Months and One Year</option>
+                        <option value="0">Above One Year</option>
+                    </select>                
+                </div>
+    
+    
+                <div class="form-group">
+                    <label for="accountType">Account Type:</label>
+                    <select id="accountType">
+                        <option value="0"></option>
+                        <option value="10">Current</option>
+                        <option value="5">Savings</option>
+                    </select>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox" required>
+                    <label for="checkbox" class="checkbox">By Clicking on the Checkbox you accept our Terms and Condition</label>
+                </div>
+                <button type = "button" onclick = "calculatePoint()">Apply for Loan</button>
+                <!-- <input type="submit" class="button" value = "Apply for Loan"> -->                 
+            </form> 
+        </div>
+        
+        
+        <p id="feedBack"></p>
+
+        
+    </div>
+
+
+
+
+    <!-- <div class="rightSectionContainer rightSection format">
+        <p>
+            ▁ ▂ ▄ ▅ ▆ ▇ █ <span class="spantext">𝒯𝒶𝓀𝑒 𝒶 𝒮𝓉𝑒𝓅 𝓉o𝓌𝒶𝓇𝒹𝓈</span> █ ▇ ▆ ▅ ▄ ▂ ▁            
+        </p>
+        <p>
+            ▁ ▂ ▄ ▅ ▆ ▇ █ <span class="spantext"> 𝒜𝒸𝒽𝒾𝑒𝓋𝒾𝓃𝑔</span> █ ▇ ▆ ▅ ▄ ▂ ▁                      
+        </p>
+        <p>
+            ▁ ▂ ▄ ▅ ▆ ▇ █ <span class="spantext">𝓎o𝓊𝓇 𝒟𝓇𝑒𝒶𝓂𝓈</span> █ ▇ ▆ ▅ ▄ ▂ ▁
+
+        </p>
+    </div>     -->
+</section>
+
+    <footer>
+        <div class="logo_img">
+            <a href="index.html">
+                <img src="Images/ecash.PNG" alt="logo">
+            </a>
+
+
+            <!-- <img src="Images/logo.png" alt="logo" width="50" height="40">
+            <p class="logo">ₑCₐₛₕ</p> -->
+        </div>
+
+        <div class="footer_1">
+            <p>For You</p>
+            <ul>
+                <li><a href="form.html">Get a Loan</a></li>
+                <li><a href="">Repay a Loan</a></li>
+                <li><a href="">Pay with eCash</a></li>
+                <li><a href="">FAQs</a></li>
+                <li><a href="">Customers Support</a></li>
+            </ul>
+        </div>
+
+        <div class="footer_1">
+            <p>For Business</p>
+            <ul>
+                <li><a href="">For Banks</a></li>
+                <li><a href="">For Merchants</a></li>
+                <li><a href="">For FineTechs</a></li>
+                <li><a href="">For Telcos</a></li>
+                <li><a href="">Become a Patner</a></li>
+            </ul>
+        </div>
+
+        <div class="footer_1">
+            <p>Company</p>
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">NewsRoom</a></li>
+                <li><a href="">Career</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms and Condition</a></li>
+            </ul>
+        </div>
+        <div class="footer_1">
+            <p>We're Social</p>
+            <ul>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Youtube</a></li>
+                <li><a href="">linkdin</a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="copy">Copyright &copy; 2024 eCash, Inc. All Right Reserved</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
